@@ -155,7 +155,7 @@ resource "aws_lb_listener_rule" "main" {
 
   condition {
     host_header {
-      values = [var.component == "frontend" ? "${var.env}.vyshu.online" : "${var.component}-${var.env}.vyshu.online"]
+      values = [var.component == "frontend" ? "${var.env}.techmythree.online" : "${var.component}-${var.env}.techmythree.online"]
     }
   }
 }
@@ -190,7 +190,7 @@ resource "aws_lb_listener_rule" "public" {
 
   condition {
     host_header {
-      values = ["${var.env}.vyshu.online"]
+      values = ["${var.env}.techmythree.online"]
     }
   }
 }
